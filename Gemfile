@@ -8,14 +8,7 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
 
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -28,6 +21,25 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+
+gem 'activeadmin', github: 'gregbell/active_admin'
+
+# requires puthon 2 in order to build
+# gem 'libv8', '~> 3.16.14.3'  
+# gem 'therubyracer', '~> 0.12.0'
+
+# gem 'metasearch'
+
+group :assets do
+  # Use SCSS for stylesheets
+  gem 'sass-rails', '~> 4.0.0'
+
+  # Use Uglifier as compressor for JavaScript assets
+  gem 'uglifier', '>= 1.3.0'
+
+  # Use CoffeeScript for .js.coffee assets and views
+  gem 'coffee-rails', '~> 4.0.0'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

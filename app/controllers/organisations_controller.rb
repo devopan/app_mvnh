@@ -1,7 +1,7 @@
 class OrganisationsController < ApplicationController
 
   before_action :set_organisation, only: [:show, :edit, :update, :destroy]
-
+  # respond_to :html, :xml, :json
   # GET /organisations
   # GET /organisations.json
   def index
