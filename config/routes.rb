@@ -2,6 +2,10 @@ AppMvnh::Application.routes.draw do
   
 
 
+  resources :events
+
+  resources :organisations
+
   root 'pages#home'
 
   get "/what_is_here/birds", :to => "pages#birds"
