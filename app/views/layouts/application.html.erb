@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AppMvnh</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <title><%= title%></title>
   <%= csrf_meta_tags %>
+  <%= render 'layouts/stylesheets' %>
 </head>
 <body>
+<article>
+<%= render 'layouts/header' %>
+	<section>
+		
+	
 
-<%= yield %>
 
+
+	<%= yield %>
+
+
+
+	</section>
+<%= render 'layouts/footer' %>
+</article>
 </body>
 </html>
