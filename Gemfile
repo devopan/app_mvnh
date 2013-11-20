@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+gem 'breadcrumbs_on_rails'
+
 # requires puthon 2 in order to build
 # gem 'libv8', '~> 3.16.14.3'  
 # gem 'therubyracer', '~> 0.12.0'
