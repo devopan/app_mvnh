@@ -1,10 +1,18 @@
 class EventsController < ApplicationController
-  before_action :set_event, only: [:show, :edit, :update, :destroy]
+
+
+  
+  before_action :authenticate_admin_user!, except: [:index]
+
+  
 
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+    @events = Event.order(:created_at).page(params[:page])
+    add_breadcrumb "Home", :root_path, :title => "Homepage"
+    @title = "Events"
+    add_breadcrumb "Events", :events_path
   end
 
   # GET /events/1

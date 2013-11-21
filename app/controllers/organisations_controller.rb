@@ -1,10 +1,20 @@
 class OrganisationsController < ApplicationController
-  before_action :set_organisation, only: [:show, :edit, :update, :destroy]
+
+
+
+  
+  before_action :authenticate_admin_user!, except: [:index]
+
+  
+
   # respond_to :html, :xml, :json
   # GET /organisations
   # GET /organisations.json
   def index
-    @organisations = Organisation.all
+    @organisations = Organisation.order(:created_at).page(params[:page])
+    @title = "Organisations"
+    add_breadcrumb "Home", :root_path, :title => "Homepage"
+    add_breadcrumb "Organisations", :organisations_path
   end
 
   # GET /organisations/1
