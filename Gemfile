@@ -62,6 +62,8 @@ end
 group :test do
   gem 'sqlite3'
   gem 'rspec-rails' #, '2.6.1', :require => 'rspec-rails'
+  gem 'spork'
+  gem 'autotest'
   # gem 'test-unit'
   # gem 'webrat', '0.7.1'
   # gem 'factory_girl_rails', '1.0'
