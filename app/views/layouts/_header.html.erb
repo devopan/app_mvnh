@@ -1,5 +1,12 @@
 <header>
-<%= link_to logo, root_path %>
+<%= link_to banner, root_path %>
+<nav>
+	<% if signed_in? %>
+		<%= link_to "Admin out", destroy_admin_user_session_path %>
+	<% else %>
+		<%= link_to "Admin login", admin_user_session_path %>
+	<% end %>
+	</nav>
 <nav class="round">
 	<ul>
 	    <li><%= link_to "Home", root_path %></li>
@@ -8,6 +15,6 @@
 	    <li><%= link_to "What is here ?", what_is_here_path %></li>
 	    <li><%= link_to "Events", events_path %></li>
 	    <li><%= link_to "Contact Us", contact_us_path %></li>
-	<ul>
+	</ul>
 </nav>
 </header>

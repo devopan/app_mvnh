@@ -1,16 +1,16 @@
 module ApplicationHelper
 
-	# Return a title on a per-page basis.
+	# In order to have the same title in all the pages.
 	def title
-		base_title = "Mole Valley Natural History"
-		if @title.nil?
-			base_title
+		app_name = "Mole Valley Natural History"
+		if @title.empty?	# available from the controller and is nil if it not defined for some reason
+			app_name
 		else
-		"#{base_title} | #{@title}"
+		"#{app_name} | #{@title}" # ruby interpolation - passes the value of the variable into a string
 		end
 	end
 
-	def logo
+	def banner
 		image_tag("banner.png", :alt => "Mole Valley Natural History", :class => "round")
 	end
 end

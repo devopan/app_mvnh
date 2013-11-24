@@ -15,7 +15,7 @@ AppMvnh::Application.routes.draw do
   get "/what_is_here/fungi", :to => "pages#fungi"
   get "/what_is_here/plants", :to => "pages#plants"
   get "/resources", :to => "pages#resources"
-  get "/organisations", :to => "pages#organisations"
+  get '/organisations', :to => 'pages#organisations'
   get "/what_is_here", :to => "pages#what_is_here"
   get "/events", :to => "pages#events"
   get "/contact_us", :to => "pages#contact_us"
