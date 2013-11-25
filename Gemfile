@@ -24,7 +24,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 
 gem 'breadcrumbs_on_rails', github: 'weppos/breadcrumbs_on_rails'
 
-gem 'kaminari'
+gem 'kaminari' # for nice pagination of active record models 
 
 # requires puthon 2 in order to build
 # gem 'libv8', '~> 3.16.14.3'  

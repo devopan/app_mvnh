@@ -1,5 +1,4 @@
 module ApplicationHelper
-
 	# In order to have the same title in all the pages.
 	def title
 		app_name = "Mole Valley Natural History"

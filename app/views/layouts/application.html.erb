@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/HTML" lang="en" xml:lang="en">
 <head>
   <title><%= title%></title>
+  <!--[if lt IE 9]>
+<script src="dist/html5shiv.js"></script>
+<![endif]-->
   <%= render 'layouts/meta' %>
   <%= csrf_meta_tags %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= render 'layouts/stylesheets' %>
 </head>
 <body>
-
-<article class="container">
 <%= render 'layouts/header' %>
-	<section class="round">
+
+	<main class="round">
 		
 	<% if !(@title == "Home") %>
 	<%= render_breadcrumbs :separator => ' > ' %>
@@ -23,8 +25,9 @@
 
 
 
-	</section>
+	</main>
+	
 <%= render 'layouts/footer' %>
-</article>
+
 </body>
 </html>

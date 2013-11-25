@@ -155,3 +155,17 @@ D, [2013-11-24T19:38:47.208266 #5396] DEBUG -- : REQUESTING PAGE: GET /organisat
 D, [2013-11-24T19:38:47.216266 #5396] DEBUG -- : REQUESTING PAGE: GET /what_is_here with {} and HTTP headers {"HTTP_REFERER"=>"/organisations"}
 D, [2013-11-24T19:38:47.223267 #5396] DEBUG -- : REQUESTING PAGE: GET /events with {} and HTTP headers {"HTTP_REFERER"=>"/what_is_here"}
 D, [2013-11-24T19:38:47.230267 #5396] DEBUG -- : REQUESTING PAGE: GET /contact_us with {} and HTTP headers {"HTTP_REFERER"=>"/events"}
+D, [2013-11-25T19:22:50.258665 #6392] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-25T19:23:01.118680 #8444] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-25T19:23:28.718719 #3508] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-25T19:25:56.768926 #5420] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-25T19:29:32.999229 #5260] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-25T19:31:47.540016 #5744] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-25T19:32:36.905586 #4140] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-25T19:33:20.005646 #7652] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-25T19:33:20.015646 #7652] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2013-11-25T19:33:20.025646 #7652] DEBUG -- : REQUESTING PAGE: GET /resources with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2013-11-25T19:33:20.035646 #7652] DEBUG -- : REQUESTING PAGE: GET /organisations with {} and HTTP headers {"HTTP_REFERER"=>"/resources"}
+D, [2013-11-25T19:33:20.045646 #7652] DEBUG -- : REQUESTING PAGE: GET /what_is_here with {} and HTTP headers {"HTTP_REFERER"=>"/organisations"}
+D, [2013-11-25T19:33:20.055646 #7652] DEBUG -- : REQUESTING PAGE: GET /events with {} and HTTP headers {"HTTP_REFERER"=>"/what_is_here"}
+D, [2013-11-25T19:33:20.055646 #7652] DEBUG -- : REQUESTING PAGE: GET /contact_us with {} and HTTP headers {"HTTP_REFERER"=>"/events"}

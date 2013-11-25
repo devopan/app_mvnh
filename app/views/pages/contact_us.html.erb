@@ -1,10 +1,13 @@
 
 
 
-<article> 
+
+
+<section class="intro">
+
 <h1 class="page_title round">Contact Us</h1>
 
-
+</section>
 
 
 
@@ -17,12 +20,54 @@
     if you would like some advice on nature conservation in Mole Valley.
 
     
+    
 
+	<div class="wrapper">
+		<div id="main" style="padding:50px 0 0 0;">
+
+		<form id="contact-form" action="/" method="">
+			<h3>Get in touch</h3>
+			<h4>Fill in the form below, and we'll get back to you as soon as possible.</h4>
+			<div>
+				<label>
+					<span>Name: (required)</span>
+					<input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Email: (required)</span>
+					<input placeholder="Please enter your email address" type="email" tabindex="2" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Telephone: (optional)</span>
+					<input placeholder="Please enter your number" type="tel" tabindex="3">
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Message: (required)</span>
+					<textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+				</label>
+			</div>
+			<div>
+				<button name="submit" type="submit" id="contact-submit">Send Email</button>
+			</div>
+		</form>
+		<div class="contact-photo">
+	<p>
+	<%= image_tag("Adders-dancing.jpg", :alt => "Adders dancing", :class => "round") %>
+	</p>
+	</div>
+		</div>
+	</div>
 </section>
+	
+
 <section>
-
-    N.B. This page is currently being revised and an updated version will be provided shortly.
-
+<p>
+    <i>N.B. This page is currently being revised and an updated version will be provided shortly.</i>
+</p>
 </section>
-
-</article>

@@ -8,7 +8,7 @@ AppMvnh::Application.routes.draw do
 
   # resources :organisations
 
-  root 'pages#home'
+  root :to => 'pages#home'
 
   get "/what_is_here/birds", :to => "pages#birds"
   get "/what_is_here/butterflies", :to => "pages#butterflies"

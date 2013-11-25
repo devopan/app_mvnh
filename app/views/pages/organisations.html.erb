@@ -1,30 +1,26 @@
-<article>
 
+<section class="intro">
 <h1 class="page_title round">Organisations</h1>
 
+<p>
+  <%= image_tag("birds/Mute Swan and Cygnets.jpg", :alt => "Mute Swan and Cygnets", :class => "round") %>
+  </p>
+</section>
+
+<section>
+<p>
 <%= paginate @organisations %>
+</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Organisation</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
+
     <% @organisations.each do |organisation| %>
-      <tr>
-        <td><%= organisation.title %></td>
-        <td><%= organisation.description %></td>
-      </tr>
+      <tr class="color_rows_title">
+        <td><h2><%= organisation.title %></h2></td></tr>
+        <tr class="color_rows_desc"><td><%= organisation.description %></td></tr>
+      
     <% end %>
-  </tbody>
-</table>
 
 <br>
+</section>
 
-</article>

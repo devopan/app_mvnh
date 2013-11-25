@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the Mole Valley Natural History web application! This application is developed using Ruby on Rails! 11/2013
 
-Things you may want to cover:
+Compatibility:
 
-* Ruby version
+Ruby version => 1.9.3
 
-* System dependencies
+The application depends on several gems which can be found in the file called Genfile.lock. It has an administrative back-end set up for authorized users to be able to login successgully and securely in order to modify the information about organisations and events and leave comments.
 
-* Configuration
+Some parts of the application have been developed using test driven development (TDD) and behaviour driven development (BDD), utilising rspec and cucumber. The tests can be found in the folders "spec/" and "features/" respectively and can be run by executing the commands "rspec spec" and "bundle exec cucumber".
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+The application has also been deployed to Heroku.

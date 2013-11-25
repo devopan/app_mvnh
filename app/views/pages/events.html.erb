@@ -1,25 +1,30 @@
-<article>
 
+<section class="intro">
 <h1 class="page_title round">Events</h1>
 
+<p>
+  <%= image_tag("birds/Little Grebes.jpg", :alt => "Little Grebes", :class => "round") %>
+  </p>
+</section>
+
+<section>
+<p>
 <%= paginate @events %>
+</p>
 
 <table>
   <thead>
-    <tr>
-      <th>Event</th>
-      <th>Description</th>
-      <th>Date</th>
-      <th></th>
-      <th></th>
-      <th></th>
+    <tr class="color_rows">
+      <th><h2>Event</h2></th>
+      <th><h2>Description</h2></th>
+      <th><h2>Date</h2></th>
     </tr>
   </thead>
 
   <tbody>
     <% @events.each do |event| %>
-      <tr>
-        <td><%= event.title %></td>
+      <tr class="color_rows">
+        <td><h2><%= event.title %></h2></td>
         <td><%= event.description %></td>
         <td><%= event.date %></td>
       </tr>
@@ -28,5 +33,4 @@
 </table>
 
 <br>
-
-</article>
+</section>
