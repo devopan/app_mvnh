@@ -11,6 +11,6 @@
 
 require 'spec_helper'
 
-describe Organisation do
-  pending "add some examples to (or delete) #{__FILE__}"
-end
+# describe Organisation do
+#   pending "add some examples to (or delete) #{__FILE__}"
+# end

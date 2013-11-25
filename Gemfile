@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-# ruby '1.9.3'
+ruby '1.9.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails' #, '4.0.0'
+gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
@@ -53,6 +53,7 @@ group :development do
   gem 'sqlite3'
   gem 'rspec-rails' #, '2.6.1', :require => 'rspec-rails'
   # gem 'annotate', '2.4.0'
+  gem 'factory_girl_rails'
 
   # gem 'test-unit'
 end
@@ -61,10 +62,14 @@ group :test do
   gem 'sqlite3'
   gem 'rspec-rails' #, '2.6.1', :require => 'rspec-rails'
   gem 'spork' # minimise rails overhead from rspec
-  gem 'autotest'
+  gem 'autotest-rails'
   # gem 'test-unit'
   gem 'webrat' #, '0.7.1'
-  # gem 'factory_girl_rails', '1.0'
+  gem 'webrick', '1.3.1'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+  # gem 'thin' # for avoiding warning messages
+  gem 'factory_girl_rails'
   # gem 'turn', :require => false
 end
 
