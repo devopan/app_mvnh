@@ -1,4 +1,6 @@
 
+<article>
+
 <section class="intro">
 <h1 class="page_title round">Events</h1>
 
@@ -7,30 +9,20 @@
   </p>
 </section>
 
-<section>
+<section class="information">
 <p>
 <%= paginate @events %>
 </p>
 
-<table>
-  <thead>
-    <tr class="color_rows">
-      <th><h2>Event</h2></th>
-      <th><h2>Description</h2></th>
-      <th><h2>Date</h2></th>
-    </tr>
-  </thead>
-
-  <tbody>
     <% @events.each do |event| %>
-      <tr class="color_rows">
-        <td><h2><%= event.title %></h2></td>
-        <td><%= event.description %></td>
-        <td><%= event.date %></td>
-      </tr>
+    <section class="info_individual">
+        <section class="color_rows_title round"><h2><%= event.title %></h2></section>
+        <section class="color_rows_desc round"><p><%= event.description %></p></section>
+        <h3> Date announced: <%= event.date %></h3>
+    </section>
     <% end %>
-  </tbody>
-</table>
+
 
 <br>
 </section>
+</article>

@@ -13,6 +13,7 @@
  *= require_normalize
  *= require_social
  */
+
 /*@import url("contact.css");*/
 /*
 # 
@@ -58,12 +59,58 @@
 	font-size: 15px;
 	margin-right: 20px; }
  
-.list_table { width: 70%; }
  
-.color_rows_title:nth-child(odd) { background: grey }
- 
-.color_rows_desc:nth-child(even) { background: darkgrey }
- 
+.information {
+	padding: 20px;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-bottom: 100px;
+	margin-left: auto;
+	width: 50%;
+	border: solid;
+	border-width: 25px;
+	border-color: grey;
+	border-style: outset;
+	box-shadow: 0px 15px 30px rgba(0,0,0,0.9);
+}
+
+.info_individual {
+	/*border-style: inset;*/
+	border-color: darkgrey;
+	margin-top: 100px;
+	border-width: 10px;
+
+}
+
+.info_individual h3 {
+	margin-left: 15px;
+
+}
+
+
+.color_rows_title {
+	text-align: center;
+	padding: 1px;
+	margin-top: 5px;
+	margin-right: 8px;
+	margin-bottom: 5px;
+	margin-left: 8px;
+
+}
+
+.color_rows_desc {
+	text-align: center;
+	padding: 1px;
+	margin-top: 5px;
+	margin-right: 8px;
+	margin-bottom: 5px;
+	margin-left: 8px;
+	line-height:2;
+}
+
+.color_rows_title:nth-of-type(odd) { background: grey }
+.color_rows_desc:nth-of-type(even) { background: darkgrey }
+
 body {
 	margin-top: 50px;
 	margin-right: auto;
@@ -71,6 +118,7 @@ body {
 	margin-left: auto;
 	width: 930px;
 	display: block;
+	font-family: Helvetica;
 	background: -webkit-linear-gradient(left top, BurlyWood, LimeGreen ); /* For Safari */
 	background: -o-linear-gradient(bottom right, BurlyWood, LimeGreen ); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(bottom right, BurlyWood, LimeGreen ); /* For Firefox 3.6 to 15 */
@@ -103,8 +151,40 @@ footer {
 	background: green;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
-	border-radius: 20px; }
+	border-radius: 20px;
+	padding-bottom: 20px;
+
+	 }
+
+
+	
+	
+
+
+/*}
+
+.intro_photo {
+	
+	float: left;
+	
+	
+	
+
+} 	
+
+
+.intro_text {
+	float: right;
+	width: 40%;
+	padding-top: 70px;
+	padding-right: 30px;
+	
+
+} 	*/
  
+
+
+
 main {
 	margin-top: 1em;
 	font-size: 100%;
@@ -114,9 +194,9 @@ main {
 	-webkit-border-radius: 20px;
 	border-radius: 20px; }
  
-section h1 { font-size: 200%; }
+article h1 { font-size: 200%; }
  
-section h2 { font-size: 120%; }
+article h2 { font-size: 120%; }
  
 /* Links */
 a { text-decoration: none; }
@@ -191,6 +271,8 @@ nav ul li {
  
 					nav ul ul li a:hover {
 						background: #4b545f;
+/*						border-style: outset;
+						border-width:10px; */
 						color: #fff;
 						-moz-border-bottom-left-radius: 18px;
 						-webkit-border-bottom-left-radius: 18px;
@@ -207,7 +289,7 @@ nav ul li {
  
 .social {
 	padding: 0!important;
-	margin-left: 100px;
+	margin-left: 80px;
 	list-style-type: none!important; }
  
 	.social li {
@@ -297,7 +379,8 @@ Author: http://www.toddmotto.com
 	color: #444;
 	width: 100%;
 	float: left;
-	padding-bottom: 80px; }
+	padding-bottom: 80px;
+	padding:50px 0 0 0; }
  
 .contact-photo {
 	float: right;
@@ -320,7 +403,8 @@ Author: http://www.toddmotto.com
 	background: #F9F9F9;
 	padding: 25px;
 	float: left;
-	width: 40%; }
+	width: 40%;
+	margin-bottom: 50px; }
  
 	#contact-form h3 {
 		color: #991D57;
@@ -366,7 +450,7 @@ Author: http://www.toddmotto.com
  
 	#contact-form textarea {
 		height: 100px;
-		max-width: 100%; }
+		max-width: 90%; }
  
 	#contact-form button[type="submit"] {
 		cursor: pointer;
