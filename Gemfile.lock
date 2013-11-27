@@ -232,7 +232,7 @@ DEPENDENCIES
   activeadmin!
   autotest-rails
   breadcrumbs_on_rails!
-  coffee-rails (~> 4.0.0)
+  coffee-rails
   cucumber-rails
   database_cleaner
   factory_girl_rails
@@ -241,10 +241,10 @@ DEPENDENCIES
   jquery-turbolinks
   kaminari
   pg
-  rails (~> 4.0.1)
+  rails
   rails_12factor
   rspec-rails
-  sass-rails (~> 4.0.1)
+  sass-rails
   sdoc
   spork
   sqlite3
