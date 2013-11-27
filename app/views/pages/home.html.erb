@@ -1,15 +1,49 @@
 
-
-
-
 <article>
-<section class="intro">
-<h1 class="page_title round">"Mole Valley's Natural History"</h1>
+<section class="intro_homepage">
 
-<p>
-<%= image_tag("Denbies-Hillside.jpg", :alt => "Mole Valley's Natural History", :class => "round") %>
-</p>
+<ul class="tabs">
+    <li><a href="." title="tab1">Home</a></li>
+    <li><a href="." title="tab2">Birds</a></li>
+    <li><a href="." title="tab3">Butterflies</a></li>
+    <li><a href="." title="tab4">Plants</a></li>
+    <li><a href="." title="tab5">Fungi</a></li>
+</ul>
+
+<section class="tabs_content">
+    <section class="tab1 view round"><%= image_tag("Denbies-Hillside.png", :alt => "Mole Valley's Natural History", :class => "round") %>
+    <div class="mask"><h2>What is here ?</h2>
+    <p>Birds, butterflies, plants and fungi !</p>
+    <%= link_to "Read more ...", what_is_here_path, target: '_blank' %>
+    </div>
+    </section>
+    <section class="tab2 view round"><%= image_tag("birds/House-Martin_big.png", :alt => "Mole Valley's Natural History", :class => "round") %>
+    <div class="mask"><h2>Birds !</h2>
+    <p>Lovely Birds!</p>
+    <%= link_to "Read more ...", what_is_here_birds_path, target: '_blank' %>
+    </div>
+    </section>
+    <section class="tab3 view round"><%= image_tag("butterflies/Adonis-Blue-face_big.png", :alt => "Mole Valley's Natural History", :class => "round") %><div class="mask"><h2>Butterflies !</h2>
+    <p>Beautiful Butterflies!</p>
+    <%= link_to "Read more ...", what_is_here_butterflies_path, target: '_blank' %>
+    </div>
+    </section>
+    <section class="tab4 view round"><%= image_tag("plants/common_spotted_orchid.png", :alt => "Mole Valley's Natural History", :class => "round") %><div class="mask"><h2>Plants !</h2>
+    <p>Rare Plants!</p>
+    <%= link_to "Read more ...", what_is_here_plants_path, target: '_blank' %>
+    </div>
+    </section>
+    <section class="tab5 view round"><%= image_tag("fungi/ElfcapAsh02_big.png", :alt => "Mole Valley's Natural History", :class => "round") %><div class="mask"><h2>Fungi !</h2>
+    <p>Peculiar Fungi!</p>
+    <%= link_to "Read more ...", what_is_here_fungi_path, target: '_blank' %>
+    </div>
+    </section>
+</section>
+
 	</section>
+
+    <h1 class="page_title round_more">"Mole Valley's Natural History"</h1>
+    
 	<section>
 		<p>
 			    Welcome to Mole Valle's Natural History. Mole Valley has stunning landscapes with a natural history that is

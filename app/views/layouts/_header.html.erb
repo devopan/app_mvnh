@@ -1,13 +1,9 @@
-<header>
+<header class="static">
+<section class="top_container">
+<nav class="menu round">
 <%= link_to banner, root_path %>
-</header>
-<nav class="round admin_login">
-	<% if admin_user_signed_in? %>
-		<%= link_to "Admin out", destroy_admin_user_session_path %>
-	<% else %>
-		<%= link_to "Admin login", admin_user_session_path %>
-	<% end %>
-	</nav>
+</nav>
+
 <nav class="menu">
 	<ul class="round">
 	    <li class="round_home"><%= link_to "Home", root_path %></li>
@@ -25,5 +21,12 @@
 	    <li class="round_contact"><%= link_to "Contact Us", contact_us_path %></li>
 	</ul>
 </nav>
-
-
+<nav class="round admin_login">
+	<% if admin_user_signed_in? %>
+		<%= link_to "Admin Logout", destroy_admin_user_session_path %>
+	<% else %>
+		<%= link_to "Admin Login", admin_user_session_path %>
+	<% end %>
+	</nav>
+</section>
+</header>

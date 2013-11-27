@@ -14,3 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require modernizr-2.6.3
+//= require tabs
+//= require jquery.turbolinks
+
