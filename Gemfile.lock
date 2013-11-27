@@ -241,10 +241,10 @@ DEPENDENCIES
   jquery-turbolinks
   kaminari
   pg
-  rails (~> 4.0.0)
+  rails (~> 4.0.1)
   rails_12factor
   rspec-rails
-  sass-rails (~> 4.0.0)
+  sass-rails (~> 4.0.1)
   sdoc
   spork
   sqlite3
