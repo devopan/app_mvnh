@@ -11,5 +11,6 @@
 #
 
 class Event < ActiveRecord::Base
+	validates_presence_of :title, :description, :date
 	paginates_per 5
 end

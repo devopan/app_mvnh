@@ -9,7 +9,4 @@ module ApplicationHelper
 		end
 	end
 
-	def banner
-		image_tag("banner.png", :alt => "Mole Valley Natural History", :class => "round")
-	end
 end

@@ -7,7 +7,9 @@
 	<section class="intro_photo">
 
     <p>
-    <%= image_tag("Mute_Swan_heads.jpg", :alt => "Mute Swan heads", :class => "round") %>
+         <%= broadwoods_folley %>
+    
+    
     </p>
 </section>
 <section class="intro_text round">
@@ -17,12 +19,16 @@
     more about Mole Valley and its natural history.
     </p>
     </section>
+
+    <section>
+        <%= render_breadcrumbs :separator => ' > ' %>
+    </section>
 	
 	</section>
 
     <h1 class="page_title round">Resources</h1>
     
-    <section>
+    <section class="page_text round">
     <p>
     Something with slightly broader coverage to start with. The Surrey
     Wildlife Trust has been producing a wonderful

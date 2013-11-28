@@ -9,18 +9,26 @@
 <section class="intro_photo">
 
 <p>
-    <%= image_tag("plants/man_orchid_close.jpg", :alt => "man orchid close", :class => "round") %>
+    <%= man_orchid_close %>
   </p>
 </section>
 <section class="intro_text round">
 
+<p>
+  Here you will find more about the special plants in Mole Valley. 
+
+</p>
+
 </section>
 
+<section>
+        <%= render_breadcrumbs :separator => ' > ' %>
+    </section>
 
 </section>
 
 <h1 class="page_title round">Flowering Plants</h1>
-	<section>
+	<section class="page_text round">
     <h2>Box,</h2> <i>Buxus sempervirens</i>
       It is an evergreen shrub or small tree that is considered
       native in only a few places in the British Isles,
@@ -32,7 +40,7 @@
       flowers that open in early spring and these are followed by hard,
       curiously-shaped fruits.
 	</section>
-	<section>
+	<section class="page_text round">
     <h2>Wild Service Tree,</h2> <i>Sorbus torminalis</i>
       This is one of our most beautiful native trees. It has cream
       flowers and attractive leaves that turn crimson in autumn. It is a relative of
@@ -40,7 +48,7 @@
       red of its more familiar cousins. It can be found in many old woods in Mole Valley
       on the weald clay. An alternative name is the Chequers Tree.
 	</section>
-	<section>
+	<section class="page_text round">
     <h2>Green Hound’s-tongue,</h2> <i>Cynoglossum germanicum</i>
       It is a very rare plant in Britain but Mole
       Valley is one of its strongholds. It is
@@ -49,7 +57,7 @@
       found in woods on the chalk, where its numbers can vary considerably from one
       year to the next.
 	</section>
-	<section>
+	<section class="page_text round">
     <h2>Wood anemone,</h2> <i>Anemone nemorosa</i>
       This lovely woodland flower is common throughout much of Mole Valley.
       It favours deciduous woodland but it can also be found on hedge banks and road
@@ -59,7 +67,7 @@
 	</section>
 
 
-	<section>
+	<section class="page_text round">
     <h2>Man Orchid,</h2> <i>Orchis anthropophora</i>
       Some sixteen species of wild orchid can be found in Mole Valley;
       some in the clay woods and others on the chalk downs and woods. The Man Orchid

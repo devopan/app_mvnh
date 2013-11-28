@@ -7,18 +7,17 @@
 <![endif]-->
   <%= render 'layouts/meta' %>
   <%= csrf_meta_tags %>
-
+  <%= stylesheet_link_tag    "application", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true , :media => "all", debug: false %>
-  <%= render 'layouts/stylesheets' %>
 </head>
 <body>
 <%= render 'layouts/header' %>
 
 	<main class="round">
 		
-	<% if !(@title == "Home") %>
+<!-- 	<% if !(@title == "Home") %>
 	<%= render_breadcrumbs :separator => ' > ' %>
-	<% end %>
+	<% end %> -->
 
 
 

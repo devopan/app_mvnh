@@ -11,29 +11,29 @@
 </ul>
 
 <section class="tabs_content">
-    <section class="tab1 view round"><%= image_tag("Denbies-Hillside.png", :alt => "Mole Valley's Natural History", :class => "round") %>
+    <section class="tab1 view round"><%= denbies_Hillside %>
     <div class="mask"><h2>What is here ?</h2>
     <p>Birds, butterflies, plants and fungi !</p>
     <%= link_to "Read more ...", what_is_here_path, target: '_blank' %>
     </div>
     </section>
-    <section class="tab2 view round"><%= image_tag("birds/House-Martin_big.png", :alt => "Mole Valley's Natural History", :class => "round") %>
+    <section class="tab2 view round"><%= house_Martin_big %>
     <div class="mask"><h2>Birds !</h2>
     <p>Lovely Birds!</p>
     <%= link_to "Read more ...", what_is_here_birds_path, target: '_blank' %>
     </div>
     </section>
-    <section class="tab3 view round"><%= image_tag("butterflies/Adonis-Blue-face_big.png", :alt => "Mole Valley's Natural History", :class => "round") %><div class="mask"><h2>Butterflies !</h2>
+    <section class="tab3 view round"><%= adonis_Blue_face_big %><div class="mask"><h2>Butterflies !</h2>
     <p>Beautiful Butterflies!</p>
     <%= link_to "Read more ...", what_is_here_butterflies_path, target: '_blank' %>
     </div>
     </section>
-    <section class="tab4 view round"><%= image_tag("plants/common_spotted_orchid.png", :alt => "Mole Valley's Natural History", :class => "round") %><div class="mask"><h2>Plants !</h2>
+    <section class="tab4 view round"><%= common_spotted_orchid %><div class="mask"><h2>Plants !</h2>
     <p>Rare Plants!</p>
     <%= link_to "Read more ...", what_is_here_plants_path, target: '_blank' %>
     </div>
     </section>
-    <section class="tab5 view round"><%= image_tag("fungi/ElfcapAsh02_big.png", :alt => "Mole Valley's Natural History", :class => "round") %><div class="mask"><h2>Fungi !</h2>
+    <section class="tab5 view round"><%= elfcapAsh02_big %><div class="mask"><h2>Fungi !</h2>
     <p>Peculiar Fungi!</p>
     <%= link_to "Read more ...", what_is_here_fungi_path, target: '_blank' %>
     </div>
@@ -44,7 +44,7 @@
 
     <h1 class="page_title round_more">"Mole Valley's Natural History"</h1>
     
-	<section>
+	<section class="page_text round">
 		<p>
 			    Welcome to Mole Valle's Natural History. Mole Valley has stunning landscapes with a natural history that is
     internationally
@@ -75,9 +75,12 @@
     which crosses the District and can be viewed from as far away as the
     South Downs. </p>
 
-    <p>
-    <%= image_tag("box_hill_zig_zag.jpg", :alt => "box hill zig zag", :class => "round") %>
+        <p>
+    <%= box_hill_zig_zag %>
     </p>
+    </section>
+
+    <section class="page_text round">
 <p>
     The North Downs are paralleled to the South by an undulating and heavily wooded greensand ridge rising
     to
@@ -115,24 +118,27 @@
 	</section>
 
 
-	<section>
+	<section class="page_text round">
 
-    <p>
+    
         
-        <%= image_tag("broadwoods_folley.jpg", :alt => "broadwoods folley", :class => "round") %>
         
-        </p>
+        
+        
 				<p>
 			    The district is one of most wooded parts of Surrey and England with 30.5% woodland cover compared against a national
     average of
     7.5 %. This, in part, is made up of nearly 4000Ha of Broadleaf Woodland, some of which is ancient, and, just over
     2000Ha of
     mixed woodland.
+
+
 		</p>
-	</section>
+
+    
 
 
-	<section>
+
 <p>
 			The presence of a rich and varied underlying
     <a href="http://www.landis.org.uk/soilscapes">geology</a>
@@ -173,7 +179,7 @@
 
 
 
-	<section>
+	<section class="page_text round">
 
 	<p>
 		

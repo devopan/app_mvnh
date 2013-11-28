@@ -7,12 +7,12 @@
   <section class="intro_photo">
 
 <p>
-    <%= image_tag("birds/Treecreeper.jpg", :alt => "treecreeper", :class => "round") %>
+    <%= treecreeper %>
   </p>
   </section>
 <section class="intro_photo">
   <p>
-    <%= image_tag("fungi/Death-Cap.jpg", :alt => "death cap", :class => "round") %>
+    <%= death_Cap %>
   </p>
   </section>
 <section class="intro_text round">
@@ -21,20 +21,30 @@
     that are found in Mole Valley.
   </p>
 </section>
+
+<section>
+        <%= render_breadcrumbs :separator => ' > ' %>
+    </section>
+
 </section>
 
 <h1 class="page_title round">You can find plenty of things here</h1>
 
-  <section>
+  <section class="page_text round">
 
   <p>
        <h2><%= link_to "Birds", what_is_here_birds_path %></h2>
   </p>
   <h2>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h2>
+  </section>
+    <section class="page_text round">
+
     <p>
     <h2>Bats</h2>
   </p>
   <h2>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h2>
+  </section>
+  <section class="page_text round">
     <p>
        <h2><%= link_to "Butterflies", what_is_here_butterflies_path %></h2>
     About 60 different kinds of butterfly occur in Britain. More than half of them can be
@@ -45,23 +55,31 @@
     northwards as a result of climate change.  
     <p><br></br><%= link_to "Read more...", what_is_here_butterflies_path %></p>
   </p>
-  <h2>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h2>
+  
+  </section>
+  <section class="page_text round">
     <p>
       <h2>Dragonflies and Damselflies</h2>
   </p>
   <h2>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h2>
+  </section>
+  <section class="page_text round">
     <p>
        <h2><%= link_to "Fungi", what_is_here_fungi_path %></h2>
   </p>
   <h2>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h2>
+  </section>
+  <section class="page_text round">
     <p>
       <h2>Moths</h2>
   </p>
   <h2>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h2>
+  </section>
+  <section class="page_text round">
     <p>
        <h2><%= link_to "Plants", what_is_here_plants_path %></h2>
   </p>
-
+  <h2>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</h2>
     </section>
   </article>
 
