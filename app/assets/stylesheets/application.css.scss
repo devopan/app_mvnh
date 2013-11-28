@@ -721,11 +721,6 @@ footer {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
   font: 400 12px / 1.625 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
   width: 100%;
@@ -744,17 +739,16 @@ footer {
 #contact-form {
   input {
     &[type="text"], &[type="email"], &[type="tel"] {
-      font: 400 12px / 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font: 400 12px / 12px "Helvetica Neue", Helvetica;
     }
   }
   textarea, button[type="submit"] {
-    font: 400 12px / 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 400 12px / 12px "Helvetica Neue", Helvetica;
   }
   text-shadow: 0 1px 0 #FFF;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  /*background: #F9F9F9;*/
   padding: 25px;
   float: left;
   width: 40%;
@@ -770,11 +764,10 @@ footer {
     font-size: 13px;
   }
   label span {
-    cursor: pointer;
     color: #991D57;
     display: block;
     margin: 5px 0;
-    font-weight: 900;
+    font-weight: 700;
   }
   input {
     &[type="text"], &[type="email"], &[type="tel"], &[type="url"] {
@@ -805,17 +798,11 @@ footer {
   }
   input {
     &[type="text"]:hover, &[type="email"]:hover, &[type="tel"]:hover, &[type="url"]:hover {
-      -webkit-transition: border-color 0.3s ease-in-out;
-      -moz-transition: border-color 0.3s ease-in-out;
-      transition: border-color 0.3s ease-in-out;
       border: 1px solid #AAA;
     }
   }
   textarea {
     &:hover {
-      -webkit-transition: border-color 0.3s ease-in-out;
-      -moz-transition: border-color 0.3s ease-in-out;
-      transition: border-color 0.3s ease-in-out;
       border: 1px solid #AAA;
     }
     height: 100px;
@@ -826,21 +813,11 @@ footer {
     width: 40%;
     border: none;
     background: #991D57;
-    background-image: linear-gradient(bottom, #8c1c50 0%, #991d57 52%);
-    background-image: -moz-linear-gradient(bottom, #8c1c50 0%, #991d57 52%);
-    background-image: -webkit-linear-gradient(bottom, #8c1c50 0%, #991d57 52%);
     color: #FFF;
     margin: 0 0 5px;
     padding: 10px;
     border-radius: 5px;
-    &:hover {
-      background-image: linear-gradient(bottom, #9c215a 0%, #a82767 52%);
-      background-image: -moz-linear-gradient(bottom, #9c215a 0%, #a82767 52%);
-      background-image: -webkit-linear-gradient(bottom, #9c215a 0%, #a82767 52%);
-      -webkit-transition: background 0.3s ease-in-out;
-      -moz-transition: background 0.3s ease-in-out;
-      transition: background-color 0.3s ease-in-out;
-    }
+
     &:active {
       box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
     }
