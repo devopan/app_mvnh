@@ -67,7 +67,7 @@ group :test do
   # gem 'test-unit'
   gem 'webrat' #, '0.7.1'
   gem 'webrick', '1.3.1'
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails' #, :require => false
   gem 'database_cleaner'
   # gem 'thin' # for avoiding warning messages
   gem 'factory_girl_rails'
