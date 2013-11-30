@@ -18,3 +18,17 @@ end
 And /^I should see "Dashboard"$/ do
   page.should have_title("Dashboard | Mole Valley Natural History")
 end
+
+
+Given /^I am signed in as an administrator$/ do
+    visit(admin_user_session_path)
+    fill_in('Email', :with => "admin@example.com")
+    fill_in('Password', :with => "password")
+    click_button('Login')
+end
+When /^I click on the logout button$/ do
+    visit(destroy_admin_user_session_path)
+  end
+Then /^I should be redirected to home path$/ do
+  current_path.should == "/" 
+end

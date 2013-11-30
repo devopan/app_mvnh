@@ -8,14 +8,12 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true , :media => "all", debug: false %>
 </head>
 <body>
-<wrapper style="width: 890px">
+
 <%= render 'layouts/header' %>
 
 	<main class="round">
 		
-<!-- 	<% if !(@title == "Home") %>
-	<%= render_breadcrumbs :separator => ' > ' %>
-	<% end %> -->
+
 
 
 
@@ -26,6 +24,6 @@
 	</main>
 	
 <%= render 'layouts/footer' %>
-</wrapper
+
 </body>
 </html>
