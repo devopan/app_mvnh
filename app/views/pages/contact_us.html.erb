@@ -1,87 +1,66 @@
 
-
-<article> 
-
-<section class="intro">
-
-
-
-
-<section class="intro_photo">
-<p>
-    <%= small_Heath %>
-  </p>
-</section>
- <section class="intro_text round">
-<p>
-  	
+<article>
+    <section class="intro">
+        <section class="intro_photo">
+            <p><%= small_Heath %>
+            </p>
+        </section>
+        <section class="intro_text round">
+            <p>
+      
 
     We are always looking for additional support. A contact point is currently being arranged (February 2012)
     and will be added as soon as possible. Do get in touch if you would either like to offer help or
     if you would like some advice on nature conservation in Mole Valley.
 
     </p>
+        </section>
+        <section><%= render_breadcrumbs :separator => ' > ' %>
+        </section>
     </section>
-
     <section>
-        <%= render_breadcrumbs :separator => ' > ' %>
-    </section>
-
-</section>
-
-
-
-<section> 
-
-<h1 class="page_title round">Contact Us</h1>
-    
-
-	<section class="wrapper page_text round">
-
-
-		<form class="contact-form" action="/contact_us" method="get">
-			<h3>Get in touch</h3>
-			<h4>Fill in the form below, and we'll get back to you as soon as possible.</h4>
-			<section>
-				<label>
-					<span>Name: (required)</span>
-					<input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
-				</label>
-			</section>
-			<section>
-				<label>
-					<span>Email: (required)</span>
-					<input placeholder="Please enter your email address" type="email" tabindex="2" required>
-				</label>
-			</section>
-			<section>
-				<label>
-					<span>Telephone: (optional)</span>
-					<input placeholder="Please enter your phone number" type="tel" tabindex="3">
-				</label>
-			</section>
-			<section>
-				<label>
-					<span>Message: (required)</span>
-					<textarea placeholder="We are always happy to receive feedback or enquiries!" tabindex="4" required></textarea>
-				</label>
-			</section>
-			<section>
-				<button name="submit" type="submit" id="contact-submit">Send Email</button>
-			</section>
-		</form>
-		<section class="contact-photo">
-	<p>
-	<%= image_tag("Adders-dancing.jpg", :alt => "Adders dancing", :class => "round") %>
-	</p>
-	</section>
-	</section>
-</section>
-	
-
-<section style="clear: left; padding: 20px;">
-<p>
-    <i>N.B. This page is currently being revised and an updated version will be provided shortly.</i>
-</p>
-</section>
-</article>
+        <h1 class="page_title round">Contact Us</h1>
+        <section class="wrapper page_text round">
+            <form class="contact-form" action="/contact_us" method="get">
+                <h3>Get in touch</h3>
+                <h4>Fill in the form below, and we'll get back to you as soon as possible.</h4>
+                <section>
+                    <label>
+                        <span>Name: (required)</span>
+                        <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+                        </label>
+                    </section>
+                    <section>
+                        <label>
+                            <span>Email: (required)</span>
+                            <input placeholder="Please enter your email address" type="email" tabindex="2" required>
+                            </label>
+                        </section>
+                        <section>
+                            <label>
+                                <span>Telephone: (optional)</span>
+                                <input placeholder="Please enter your phone number" type="tel" tabindex="3">
+                                </label>
+                            </section>
+                            <section>
+                                <label>
+                                    <span>Message: (required)</span>
+                                    <textarea placeholder="We are always happy to receive feedback or enquiries!" tabindex="4" required></textarea>
+                                </label>
+                            </section>
+                            <section>
+                                <button name="submit" type="submit" id="contact-submit">Send Email</button>
+                            </section>
+                        </form>
+                        <section class="contact-photo">
+                            <p><%= image_tag("Adders-dancing.jpg", :alt => "Adders dancing", :class => "round") %>
+                            </p>
+                        </section>
+                    </section>
+                </section>
+                <section style="clear: left; padding: 20px;">
+                    <p>
+                        <i>N.B. This page is currently being revised and an updated version will be provided shortly.</i>
+                    </p>
+                </section>
+            </article>

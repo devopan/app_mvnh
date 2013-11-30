@@ -1,50 +1,42 @@
 
 <article>
-
-<section class="intro">
-<section class="intro_photo">
-
-<p>
-  <%= little_Grebes %>
-  </p>
-</section>
-
-<section class="intro_text round">
-
-<p>
-	  Natural History Related Events in Mole Valley
+    <section class="intro">
+        <section class="intro_photo">
+            <p><%= little_Grebes %>
+            </p>
+        </section>
+        <section class="intro_text round">
+            <p>
+      Natural History Related Events in Mole Valley
 
     Mole Valley has a lively and active community of natural history enthusiasts. There are events
     that suite all levels of experience. We provide here some links that will keep you up to date
     with natural history related activities in Mole Valley.
 </p>
-
-</section>
-
-<section>
-        <%= render_breadcrumbs :separator => ' > ' %>
+        </section>
+        <section><%= render_breadcrumbs :separator => ' > ' %>
+        </section>
     </section>
-
-</section>
-
-<h1 class="page_title round">Events</h1>
-
-<section class="information round">
-<p>
-<%= paginate @events %>
-</p>
-
-    <% @events.each do |event| %>
-    <section class="info_individual">
-        <section class="color_rows_title round"><h2><%= event.title %></h2></section>
-        <section class="color_rows_desc round"><p><%= event.description %></p></section>
-        <section class="color_rows_date round"><h3> Announced: <%= event.date %></h3></section>
-    </section>
-    <% end %>
-<p>
-<%= paginate @events %>
-</p>
-
-<br>
-</section>
-</article>
+    <h1 class="page_title round">Events</h1>
+    <section class="information round">
+        <p><%= paginate @events %>
+        </p><% @events.each do |event| %>
+        <section class="info_individual">
+            <section class="color_rows_title round">
+                <h2><%= event.title %>
+                </h2>
+            </section>
+            <section class="color_rows_desc round">
+                <p><%= event.description %>
+                </p>
+            </section>
+            <section class="color_rows_date round">
+                <h3> Announced: <%= event.date %>
+                </h3>
+            </section>
+        </section><% end %>
+        <p><%= paginate @events %>
+        </p>
+        <br>
+        </section>
+    </article>

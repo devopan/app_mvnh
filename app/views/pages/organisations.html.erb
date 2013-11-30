@@ -1,49 +1,35 @@
 
 <article>
-
-<section class="intro">
-<section class="intro_photo">
-
-<p>
-  <%= mute_Swan_and_Cygnets %>
-  </p>
-</section>
-<section class="intro_text round">
-
-<p>
-	Organisations involved in Mole Valley's natural beauties are found here along with some links for further information. 
+    <section class="intro">
+        <section class="intro_photo">
+            <p><%= mute_Swan_and_Cygnets %>
+            </p>
+        </section>
+        <section class="intro_text round">
+            <p>
+    Organisations involved in Mole Valley's natural beauties are found here along with some links for further information. 
 </p>
-
-</section>
-
-
-<section>
-        <%= render_breadcrumbs :separator => ' > ' %>
+        </section>
+        <section><%= render_breadcrumbs :separator => ' > ' %>
+        </section>
     </section>
-
-</section>
-
-
-
-<h1 class="page_title round">Organisations</h1>
-
-<section class="information round">
-<p>
-<%= paginate @organisations %>
-</p>
-
-    <% @organisations.each do |organisation| %>
-    <section class="info_individual">
-      	<section class="color_rows_title round"><h2><%= organisation.title %></h2></section>
-        <section class="color_rows_desc round"><p><%= organisation.description %></p></section>
-      </section>
-    <% end %>
-
-<p>
-<%= paginate @organisations %>
-</p>
-
-<br>
-</section>
-</article>
+    <h1 class="page_title round">Organisations</h1>
+    <section class="information round">
+        <p><%= paginate @organisations %>
+        </p><% @organisations.each do |organisation| %>
+        <section class="info_individual">
+            <section class="color_rows_title round">
+                <h2><%= organisation.title %>
+                </h2>
+            </section>
+            <section class="color_rows_desc round">
+                <p><%= organisation.description %>
+                </p>
+            </section>
+        </section><% end %>
+        <p><%= paginate @organisations %>
+        </p>
+        <br>
+        </section>
+    </article>
 

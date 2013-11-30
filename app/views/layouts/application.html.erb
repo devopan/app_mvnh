@@ -1,29 +1,18 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-  <title><%= title%></title>
-  <%= render 'layouts/meta' %>
-  <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag    "application", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true , :media => "all", debug: false %>
-</head>
-<body>
-
-<%= render 'layouts/header' %>
-
-	<main class="round">
-		
-
-
-
-
-	<%= yield %>
-
-
-
-	</main>
-	
-<%= render 'layouts/footer' %>
-
-</body>
+<html
+    xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <title><%= title%></title>
+        <%= render 'layouts/meta' %>
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag "application", "data-turbolinks-track" => true %>
+        <%= javascript_include_tag "application", "data-turbolinks-track" => true , :media => "all", debug: false %>
+    </head>
+    <body>
+    <%= render 'layouts/header' %>
+        <main class="round">
+        <%= yield %>
+        </main>
+    <%= render 'layouts/footer' %>
+    </body>
 </html>
