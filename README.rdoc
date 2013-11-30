@@ -4,10 +4,12 @@ Welcome to the Mole Valley Natural History web application! This application is 
 
 Compatibility:
 
+Has been tested and works without major glitches in Firefox, Chrome, Opera, Safari and IE.
+
 Ruby version => 1.9.3
 
-The application depends on several gems which can be found in the file called Genfile.lock. It has an administrative back-end set up for authorized users to be able to login successgully and securely in order to modify the information about organisations and events and leave comments.
+The application depends on several gems which can be found in the file called Gemfile.lock. It has an administrative back-end set up for authorized users to be able to login successfully and securelly in order to modify the information about organisations and events and leave comments.
 
 Some parts of the application have been developed using test driven development (TDD) and behaviour driven development (BDD), utilising rspec and cucumber. The tests can be found in the folders "spec/" and "features/" respectively and can be run by executing the commands "rspec spec" and "bundle exec cucumber".
 
-The application has also been deployed to Heroku.
+The application has also been deployed to Heroku in the following domain: http://http://ancient-escarpment-1775.herokuapp.com/.
