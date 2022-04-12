@@ -14,7 +14,7 @@ class PagesController < ApplicationController
   end
 
   def organisations
-    @organisations = Organisation.order(:created_at).page(params[:page])
+    #@organisations = Organisation.order(:created_at).page(params[:page])
     @title = "Organisations"
     add_breadcrumb "Organisations", :organisations_path
   end
@@ -25,7 +25,7 @@ class PagesController < ApplicationController
   end
 
   def events
-    @events = Event.order(:created_at).page(params[:page])
+    #@events = Event.order(:created_at).page(params[:page])
     @title = "Events"
     add_breadcrumb "Events", :events_path
   end
