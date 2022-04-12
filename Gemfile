@@ -16,7 +16,7 @@ gem 'jquery-turbolinks'
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder', '~> 2.7.0'
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 
@@ -61,7 +61,7 @@ group :test do
   gem 'autotest-rails'
   # gem 'test-unit'
   gem 'webrat' #, '0.7.1'
-  gem 'webrick', '1.3.1'
+  gem 'webrick', '>= 1.3.1'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   # gem 'thin' # for avoiding warning messages
