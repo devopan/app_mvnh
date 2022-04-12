@@ -1,11 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3'
+ruby '3.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
-
-# Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -60,8 +57,6 @@ group :development do
 end
 
 group :test do
-  gem 'sqlite3'
-  gem 'rspec-rails' #, '2.6.1', :require => 'rspec-rails'
   gem 'spork' # minimise rails overhead from rspec
   gem 'autotest-rails'
   # gem 'test-unit'
@@ -70,7 +65,6 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   # gem 'thin' # for avoiding warning messages
-  gem 'factory_girl_rails'
   # gem 'turn', :require => false
 end
 
