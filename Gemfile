@@ -55,7 +55,7 @@ group :development do
   gem 'sqlite3'
   gem 'rspec-rails' #, '2.6.1', :require => 'rspec-rails'
   # gem 'annotate', '2.4.0'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
 
   # gem 'test-unit'
 end
