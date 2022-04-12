@@ -18,7 +18,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7.0'
 
-gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'activeadmin' #, github: 'gregbell/active_admin'
 
 gem 'breadcrumbs_on_rails', github: 'weppos/breadcrumbs_on_rails'
 
@@ -29,6 +29,10 @@ gem 'kaminari' # for nice pagination of active record models
 # gem 'therubyracer', '~> 0.12.0'
 
 # gem 'metasearch'
+
+gem 'tzinfo-data'
+
+gem 'devise'
 
 group :assets do
   # Use SCSS for stylesheets
